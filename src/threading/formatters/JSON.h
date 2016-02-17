@@ -4,6 +4,7 @@
 #define THREADING_FORMATTERS_JSON_H
 
 #include "../Formatter.h"
+#include "util.h"
 
 namespace threading { namespace formatter {
 

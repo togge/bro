@@ -61,7 +61,8 @@ bool JSON::Describe(ODesc* desc, Value* val, const string& name) const
 	if ( name.size() )
 		{
 		desc->AddRaw("\"", 1);
-		desc->Add(name);
+		string fieldname = strreplace(name, ".", "_");
+		desc->Add(fieldname);
 		desc->AddRaw("\":", 2);
 		}
 
